@@ -5,6 +5,6 @@ RUN apt-get update
 LABEL name=312.school
 RUN apt-get install nginx -y
 RUN apt-get install python -y
-COPY webcontent/ /var/www/html/
+COPY hellowworld /var/www/html/
 EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
